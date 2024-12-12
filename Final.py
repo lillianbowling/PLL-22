@@ -1,18 +1,8 @@
-
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
-@st.cache
-def load_data(url):
-    df = pd.read_csv(url)
-    return df
 
-df = load_data("https://github.com/lillianbowling/PLL-22/blob/937154412eb8e4d249c279bc1318739aa93d3760/pll-team-stats22.csv")
-st.dataframe(df)
-
-
-st.button('rerun')
 # intro info 
 
 PLL_df = pd.read_csv('pll-team-stats22.csv')
